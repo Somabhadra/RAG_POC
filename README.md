@@ -1,6 +1,6 @@
 # RAG MVP
 
-A lightweight **Retrieval-Augmented Generation (RAG)** proof of concept for semantic search and question answering over your own documents.  
+A lightweight **Retrieval-Augmented Generation (RAG)** MVP for VDB and question answering over your own documents.  
 Supports both **interactive CLI** and **Streamlit web UI**.
 
 ---
@@ -8,7 +8,7 @@ Supports both **interactive CLI** and **Streamlit web UI**.
 ## ✨ Features
 - **Document Loading**: Reads multiple `.txt` files from a folder  
 - **Text Chunking**: Splits files into manageable chunks  
-- **Semantic Search**: Retrieves relevant content with embeddings & stores in VDB  
+- **Vdb**: Retrieves relevant content with embeddings & stores in VDB  
 - **Question Answering**: Uses Microsoft’s **Phi-2** model *(can be replaced by other LLMs or Azure OpenAI for enterprise needs)*  
 - **Source Attribution**: Shows which files were used for the answer  
 - **Interactive CLI & Streamlit UI**
