@@ -1,0 +1,7 @@
+Artificial Intelligence (AI) refers to the simulation of human intelligence in machines 
+that are programmed to think like humans and mimic their actions. The term may also be applied to any machine 
+that exhibits traits associated with a human mind such as learning and problem-solving.
+
+AI can be categorized as either weak or strong. Weak AI, also known as narrow AI, is designed and trained for a particular task. 
+Virtual personal assistants, such as Apple's Siri, are a form of weak AI. Strong AI, also known as artificial general intelligence, 
+describes programming that can replicate the cognitive abilities of the human brain.

@@ -1,0 +1,73 @@
+RAG MVP
+Features
+	• Document Loading: Reads multiple .txt files from a folder
+	• Text Chunking: Splits files into manageable chunks
+	• Semantic Search: Retrieves relevant content with embeddings & store in Vbd
+	• Question Answering: Uses Microsoft’s Phi-2 model(can be replace by other LLM models or Azure OpenAI for Enterprise Need) for answers
+	• Source Attribution: Shows which files were used
+	• Interactive CLI & Streamlit UI
+
+Installation
+
+# Install dependencies
+pip install faiss-cpu
+pip install sentence-transformers transformers torch scikit-learn
+pip install streamlit
+mkdir text_files
+
+Run the app:
+streamlit run app.py # for the streamlit app ui
+# sample question and outcome:
+streamlit_example.jpg refer the screenshot
+python rag_t.py  # for the terminal execution
+
+Usage
+	1. Enter path to your text files (default: text_files)
+	2. Ask questions about your docs
+	3. Type exit to quit
+Example:
+
+Enter txt dir (default 'text_files'): 
+Loading models...
+Models ready!
+Found 3 file(s).
+  - LC.txt: 2 chunks
+  - ML.txt: 3 chunks
+  - DL.txt: 2 chunks
+Created 6 embeddings.
+rag_mvp ready! Ask Qs (type 'exit' to quit):
+Q: What is AI?
+A: Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. The term may also be applied to any machine th...
+
+Src: ML.txt, LC.txt
+
+How It Works
+
+Documents → Chunking → Embeddings → Vector Search(Vdb)
+                          ↓
+        Query → Embedding → Search → Context → LLM → Answer
+
+Customization
+	• Change Model: Update model="microsoft/phi-2" in __init__
+	• Chunk Size: Modify size in _split()
+	• Top-k Retrieval: Adjust k in search()
+
+Streamlit App (app.py)
+
+To run the web app:
+
+streamlit run app.py
+
+Requirements
+	• Python 3.10
+	• sentence-transformers
+	• transformers
+	• torch
+	• scikit-learn
+	• Numpy
+	  Faiss
+	
+Limitations
+	• Works only with .txt files
+	• No embedding persistence
+	• Internet required for first model download

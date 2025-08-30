@@ -1,0 +1,7 @@
+Machine Learning is a subset of AI that focuses on the development of computer programs 
+that can access data and use it to learn for themselves. The process of learning begins with observations or data, 
+such as examples, direct experience, or instruction, in order to look for patterns in data and make better decisions 
+in the future based on the examples that we provide.
+
+The primary aim is to allow the computers to learn automatically without human intervention or assistance and adjust actions accordingly. 
+Some machine learning methods are based on neural networks with many layers, known as deep learning.

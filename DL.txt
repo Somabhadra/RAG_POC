@@ -1,0 +1,7 @@
+Deep Learning is a subset of machine learning that uses artificial neural networks 
+with multiple abstraction layers. Modern deep learning models are based on artificial neural networks, specifically 
+convolutional neural networks (CNNs), although they can also include propositional formulas or latent variables 
+organized layer-wise in deep generative models such as the nodes in deep belief networks and deep Boltzmann machines.
+
+Deep learning has been applied to fields including computer vision, speech recognition, natural language processing, 
+audio recognition, social network filtering, machine translation, bioinformatics, drug design, and board game programs.
